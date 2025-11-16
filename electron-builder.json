@@ -1,0 +1,36 @@
+{
+    "appId": "com.amit.electrontutorial",
+    "productName": "ElectronApplication",
+    "icon": "./public/icon.png",
+    "directories": {
+        "output": "dist",
+        "buildResources": "assets"
+    },
+    "files": [
+        "dist-electron",
+        "dist-react"
+    ],
+    "win": {
+        "target": [
+            "nsis",
+            "portable",
+            "msi"
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+        "target": [
+            "dmg",
+            "zip"
+        ]
+    },
+    "linux": {
+        "target": [
+            "AppImage",
+            "deb"
+        ]
+    }
+}
